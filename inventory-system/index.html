@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">LNMIIT</div>
+            <ul>
+                <li class="active">Inventory</li>
+                <li>Orders</li>
+                <li>Order History</li>
+                <li>Issued Items</li>
+                <li>Users</li>
+                <li>Admin-actions</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Inventory</h1>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Enter Item Name(exact same)">
+                    <button onclick="searchItems()">Search</button>
+                    <select>
+                        <option>All Items</option>
+                    </select>
+                    <button class="add-btn" onclick="showAddForm()">Add Items</button>
+                </div>
+            </div>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Sno</th>
+                        <th>Item Name</th>
+                        <th>Item Cost</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Available</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryBody"></tbody>
+            </table>
+            <div id="addForm" class="form-modal" style="display: none;">
+                <h2>Add New Item</h2>
+                <input type="text" id="itemName" placeholder="Item Name">
+                <input type="number" id="itemCost" placeholder="Item Cost">
+                <input type="text" id="description" placeholder="Description">
+                <input type="number" id="quantity" placeholder="Quantity">
+                <button onclick="addItem()">Submit</button>
+                <button onclick="hideAddForm()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
