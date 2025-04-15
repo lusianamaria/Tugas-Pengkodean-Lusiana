@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accurate - Kelola Bisnis dengan Efektif</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('https://via.placeholder.com/1200x600?text=Background+Image') no-repeat center center/cover;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .logo::before {
+            content: "A";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #e91e63;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .nav a.dropdown::after {
+            content: "▼";
+            font-size: 10px;
+            margin-left: 5px;
+        }
+
+        .nav .login {
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .nav .cta {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .hero {
+            padding: 100px 50px;
+            max-width: 600px;
+            color: #333;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            display: block;
+            color: #e91e63;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .buttons .primary {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buttons .secondary {
+            background-color: #fff;
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">accurate</div>
+        <nav class="nav">
+            <a href="#">Produk</a>
+            <a href="#" class="dropdown">Fitur</a>
+            <a href="#" class="dropdown">Solusi</a>
+            <a href="#" class="dropdown">Harga</a>
+            <a href="#" class="dropdown">Resources</a>
+            <a href="#" class="login">Login</a>
+            <a href="#" class="cta">Coba Gratis</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Kelola Bisnis dengan Efektif, <span>Accurate Solusinya!</span></h1>
+        <p>Optimalkan manajemen bisnis Anda dengan Software Akuntansi berbasis Online yang lengkap dan terpercaya.</p>
+        <div class="buttons">
+            <a href="#" class="primary">Gratis Konsultasi!</a>
+            <a href="#" class="secondary">Tanya-Tanya Dulu</a>
+        </div>
+    </section>
+</body>
+</html>
